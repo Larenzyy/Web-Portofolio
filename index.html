@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio La Reassa Revita Salma</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --pink1: #ffe4ec;
+        --pink2: #ffb6c1;
+        --pink3: #ffcfd9;
+        --glass: rgba(255, 255, 255, 0.4);
+        --shadow: rgba(255, 192, 203, 0.4);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Lexend", sans-serif;
+        background: linear-gradient(to bottom right, #fff0f5, #ffe4ec);
+        color: #444;
+        overflow-x: hidden;
+        font-size: 16px;
+      }
+
+      header {
+        background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+        padding: 100px 20px 60px;
+        text-align: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      header::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url("https://www.svgrepo.com/show/16916/wave.svg") no-repeat
+          center bottom;
+        background-size: cover;
+        pointer-events: none;
+      }
+
+      header h1 {
+        font-size: 3.5em;
+        font-weight: 700;
+      }
+
+      header p {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+
+      header .quote {
+        font-family: "Sacramento", cursive;
+        font-size: 2.2em;
+        margin-top: 30px;
+        color: #fff8f9;
+      }
+
+      section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 20px;
+      }
+
+      h2 {
+        font-size: 2.5em;
+        text-align: center;
+        color: #d63384;
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background-color: #d63384;
+        margin: 10px auto;
+        border-radius: 5px;
+      }
+
+      .about {
+        text-align: center;
+        max-width: 700px;
+        margin: auto;
+        font-size: 1.2em;
+        color: #555;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .project-card {
+        backdrop-filter: blur(10px);
+        background: var(--glass);
+        border-radius: 20px;
+        box-shadow: 0 8px 20px var(--shadow);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        animation: fadeIn 1s ease;
+      }
+
+      .project-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        max-height: 250px;
+        object-fit: contain;
+      }
+
+      .info {
+        padding: 25px;
+      }
+
+      .info h3 {
+        color: #d63384;
+        margin-bottom: 10px;
+      }
+
+      .info p {
+        font-size: 0.95em;
+        color: #666;
+      }
+
+      .info a {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 8px 14px;
+        border-radius: 30px;
+        background: #ffb6c1;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .info a:hover {
+        background: #d63384;
+      }
+
+      .contact {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .contact a {
+        color: #d63384;
+        font-size: 1.4em;
+        margin: 0 12px;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        color: #ff69b4;
+      }
+
+      footer {
+        background-color: #ffe4ec;
+        text-align: center;
+        padding: 25px;
+        font-size: 1em;
+        color: #777;
+        margin-top: 60px;
+      }
+
+      footer::before {
+        content: "🌸";
+        font-size: 1.5em;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2em;
+        }
+        h2 {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>La Reassa Revita Salma</h1>
+      <p>Mahasiswa S1 Pendidikan Teknologi Informasi - UNESA</p>
+      <div class="quote">"Coding with kindness and a touch of pink 🌸"</div>
+    </header>
+
+    <section>
+      <h2>Tentang Saya</h2>
+      <p class="about">
+        Saya adalah mahasiswa Universitas Negeri Surabaya jurusan S1 Pendidikan
+        Teknologi Informasi. Saya menyukai desain modern, UI/UX estetik, dan
+        menciptakan solusi digital untuk UMKM. Saya juga senang menghadapi
+        tantangan baru yang mendorong saya untuk terus belajar dan berkembang.
+      </p>
+    </section>
+
+    <section>
+      <h2>Proyek Kelompok</h2>
+
+      <!-- Proyek 1: Queen Laundry Coin -->
+      <div class="project-card">
+        <div class="gallery">
+          <img src="images/queen-laundry.png" alt="Queen Laundry Home" />
+        </div>
+        <div class="info">
+          <h3>Queen Laundry Coin</h3>
+          <p>
+            Semester 4 - Website kasir berbasis desktop ini dikerjakan secara
+            berkelompok untuk bisnis laundry koin. Fitur: transaksi, cetak
+            struk, manajemen item, pengeluaran, dan laporan
+            harian/mingguan/bulanan.
+          </p>
+          <a
+            href="https://github.com/Larenzyy/QueenLaundry.git"
+            target="_blank"
+          >
+            Lihat Github
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- Proyek 2: CaterMe App -->
+      <div class="project-card">
+        <div class="gallery">
+          <img src="images/caterme.jpg" alt="CaterMe Home" />
+        </div>
+        <div class="info">
+          <h3>CaterMe</h3>
+          <p>
+            Semester 3 - Aplikasi Android pemesanan katering dengan fitur
+            pemilihan paket, dan sistem notifikasi pengiriman. Aplikasi ini
+            dikembangkan dengan memodifikasi dari repository
+            <a
+              href="https://github.com/AzharRivaldi/Catering.git"
+              target="_blank"
+            >
+              Catering GitHub Azhar Rivaldi </a
+            >.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1nPwfrj_yW1YdiXokIZcAtJFXvoQM4Wrz/view?usp=sharing"
+            target="_blank"
+          >
+            Download disini
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Kontak</h2>
+      <p>
+        <a href="mailto:la.23159@mhs.unesa.ac.id"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/lare.assa?igsh=NXhybmRuaWl1em9p&utm_source=qr"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://wa.me/6287855168633" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://github.com/Larenzyy" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 Revita<br />
+      Terima kasih telah mengunjungi 🌷
+    </footer>
+  </body>
+</html>
